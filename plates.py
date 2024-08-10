@@ -4,17 +4,20 @@ def main():
 
 
 def is_valid(s):
-    ...
+    if check_first(s) and check_length(s) and check_end(s):
+        ...
 
-def checkFirst(s):
+def check_first(s):
     return True if s[0:2].isalpha() else False 
 
-def checklength(s):
+def check_length(s):
     if 2 < len(s) <= 6:
         return True
     else:
         return False
 
+def check_end(s):
+    return True if s[-1].isnumeric() else False
 
 if __name__ == "__main__":
     main()
