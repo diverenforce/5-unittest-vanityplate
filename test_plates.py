@@ -15,10 +15,10 @@ def test_more():
     assert plates.is_valid('298746589ladfa98374') == False
 
 def test_first():
-    assert plates.is_valid('2yes') == False
-    assert plates.is_valid('21twe') == False
-    assert plates.is_valid('kyes') == True
-    assert plates.is_valid('twtwe') == True
+    assert plates.is_valid('2y') == False
+    assert plates.is_valid('21') == False
+    assert plates.is_valid('ka') == True
+    assert plates.is_valid('tw') == True
 
 def test_punct():
     assert plates.is_valid('p!!hah') == False
