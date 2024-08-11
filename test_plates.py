@@ -24,3 +24,8 @@ def test_punct():
     assert plates.is_valid('p!!hah') == False
     assert plates.is_valid('!@#$') == False
     assert plates.is_valid('no!!1') ==  False
+
+def test_zero():
+    assert plates.is_valid('yes0') == False
+    assert plates.is_valid('no01') == False
+    assert plates.is_valid('cs50') == True
