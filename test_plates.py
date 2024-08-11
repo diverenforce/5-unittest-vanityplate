@@ -19,3 +19,8 @@ def test_first():
     assert plates.is_valid('21twe') == False
     assert plates.is_valid('kyes') == True
     assert plates.is_valid('twtwe') == True
+
+def test_punct():
+    assert plates.is_valid('p!!hah') == False
+    assert plates.is_valid('!@#$') == False
+    assert plates.is_valid('no!!1') ==  False
