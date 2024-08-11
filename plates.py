@@ -31,6 +31,10 @@ def check_length(s):
     else:
         return False
 
+def check_punct(s):
+    return True if s.isalnum() else False
+
+
 
 # def check_end(s):
 #     return True if s[-1].isnumeric() else False
