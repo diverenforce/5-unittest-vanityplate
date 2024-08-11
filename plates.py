@@ -26,7 +26,7 @@ def check_first(s):
 
 
 def check_length(s):
-    if 2 < len(s) <= 6:
+    if 2 <= len(s) <= 6:
         return True
     else:
         return False
